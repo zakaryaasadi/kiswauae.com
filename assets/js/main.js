@@ -53,7 +53,7 @@ $(document).ready(function(){
     $.post("https://services.kiswaksa.com/api/task/create",
     {
       name: name,
-      phone: phone,
+      phone: "+971" + phone,
       address: country + ", " + em + ", " +address,
       created_by: "Website",
       country: "UAE"
@@ -81,6 +81,12 @@ $(document).ready(function(){
   return;
 
   });
+
+
+  $("#send-message").click(function(){
+    $(".send-message .sent-message").css("display","block");
+  });
+
 });
 
 
