@@ -53,14 +53,13 @@ $(document).ready(function(){
     $.post("https://services.kiswaksa.com/api/task/create",
     {
       name: name,
-      phone: "+971" + phone,
+      phone: "+971" + phoneNo,
       address: country + ", " + em + ", " +address,
       created_by: "Website",
       country: "UAE"
     },
   function(data, status){
     $("#create-order .loading").css("display","none");
-    
     let d = JSON.parse(data);
 
     if(status == "success"){
