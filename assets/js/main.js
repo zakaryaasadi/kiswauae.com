@@ -60,19 +60,24 @@ $(document).ready(function(){
     },
   function(data, status){
     $("#create-order .loading").css("display","none");
-    let d = JSON.parse(data);
 
-    if(status == "success"){
-      if(d.status == 200){
-        $("#create-order .sent-message").css("display","block");
-      }else if(d.status == 2010){
-        $("#create-order .dup-message").css("display","block");
-        $("#date").html(d.results.datetime);
+    try{
+      if(status == "success"){
+        let d = JSON.parse(data);
+  
+        if(d.status == 200){
+          $("#create-order .sent-message").css("display","block");
+        }else if(d.status == 2010){
+          $("#create-order .dup-message").css("display","block");
+          $("#date").html(d.results.datetime);
+        }else{
+          $("#create-order .error-message").css("display","block");
+        }
+  
       }else{
         $("#create-order .error-message").css("display","block");
       }
-
-    }else{
+    }catch(e){
       $("#create-order .error-message").css("display","block");
     }
   });
