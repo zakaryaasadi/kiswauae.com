@@ -31,7 +31,7 @@ $(document).ready(function(){
   
   
       let phoneNo = Number(a2e(phone));
-      if(phoneNo < 10000000 || phoneNo > 99999999 || isNaN(phoneNo)){
+      if(phoneNo < 500000000 || phoneNo > 599999999 || isNaN(phoneNo)){
         $("#phone_incorrect").css("display","block");
         return;
       }else{
