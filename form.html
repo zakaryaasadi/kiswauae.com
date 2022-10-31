@@ -1,0 +1,133 @@
+<!doctype html>
+<html lang="ar" dir="rtl">
+  <head>
+  	<title>كسوة - تقديم طلب</title>
+    <meta charset="utf-8">
+	<link href="assets/img/favicon.png" rel="icon">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+	<link href='https://fonts.googleapis.com/css?family=Roboto:400,100,300,700' rel='stylesheet' type='text/css'>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	
+	<link rel="stylesheet" href="assets/vendor/bootstrap/css/bootstrap.rtl.min.css">
+
+	<link rel="stylesheet" href="assets/css/form.css">
+	</head>
+	<body class="text-right">
+	<section id="create-order" class="mb-5">
+		<div class="container">
+			<div class="row justify-content-center p-3">
+				<div class="col-md-12 text-center mb-5 bg-primary">
+					<img src="assets/img/logo.png" class="img-fluid">
+				</div>
+			</div>
+			<div class="row justify-content-center">
+				<div class="col-md-12">
+					<div class="wrapper">
+						<div class="row no-gutters">
+							<div class="col-lg-8 col-md-7 order-md-last d-flex align-items-stretch">
+								<div class="contact-wrap w-100 p-md-5 p-4">
+									<h3 class="mb-4">قدم طلبك الآن</h3>
+									<form class="contactForm">
+										<div class="row">
+											<div class="col-md-6 form-group">
+											  <label>اسمك بالكامل</label>
+											  <input type="text" name="name" class="form-control" id="name" placeholder="اسمك" required>
+											  <small id="name_empty" class="err-info form-text text-danger">رجاء قم بإدخال الاسم</small>
+											</div>
+											<div class="col-md-6 form-group mt-3 mt-md-0">
+											  <label>رقم الهاتف</label>
+											  <input type="text" class="form-control" name="phone" id="phone" placeholder="05XXXXXXXX" required>
+											  <small id="phone_empty" class="err-info form-text text-danger">رجاء قم بإدخال رقم الهاتف</small>
+											  <small id="phone_incorrect" class="err-info form-text text-danger">رجاء قم بإدخال رقم الهاتف بشكل صحيح</small>
+											</div>
+										  </div>
+										  <div class="row">
+											<div class="col-md-3 form-group">
+											  <label>الإمارة</label>
+											  <select class="form-control" name="emirate" id="emirate">
+												<option value="أبوظبي" selected>أبوظبي</option>
+												<option value="دبي">دبي</option>
+												<option value="الشارقة">الشارقة</option>
+												<option value="عجمان">عجمان</option>
+												<option value="الفجيرة">الفجيرة</option>
+												<option value="رأس الخيمة">رأس الخيمة</option>
+												<option value="أم القيوين">أم القيوين</option>
+											  </select>                </div>
+											<div class="col-md-9 form-group mt-3 mt-md-0">
+											  <label>العنوان</label>
+											  <input type="text" class="form-control" name="address" id="address" placeholder="اسم المنطقة، اسم البناء، رقم الشقة/فيلا" required>
+											  <small id="address_empty" class="err-info form-text text-danger">رجاء قم بإدخال العنوان</small>
+											</div>
+										  </div>
+										  <div class="my-3">
+											<div class="loading"> جاري المعالجة  </div>
+											<div class="dup-message">لديك طلب سابق قيد المعالجة سوف يتم التواصل معكم بتاريخ <strong id="date"></strong></div>
+											<div class="error-message">حدث خطأ أثناء رفع الطلب يمكن التواصل معنا عن طريق الهاتف</div>
+											<div class="sent-message">تم إرسال طلبك بنجاح سوف يتم التواصل معكم خلال يومين عمل. شكراً لك!</div>
+										  </div>
+										  <button id="send" type="button" class="btn btn-primary">إرسال الطلب</button>
+									</form>
+								</div>
+							</div>
+							<div class="col-lg-4 col-md-5 d-flex align-items-stretch">
+								<div class="info-wrap bg-primary w-100 p-md-5 p-4">
+									<h3>فائض ملابسك = قيمة جديدة</h3>
+									<p class="mb-4">احصل على مكأفاة مالية مقابل ملابسك المستعملة بالإضافة لكوبون خصم لأكبر الشركات داخل الإمارات</p>
+				        	<div class="dbox w-100 d-flex align-items-start">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-map-marker"></span>
+				        		</div>
+				        		<div class="text pr-3">
+					            <p><span>العنوان:</span> الإمارات العربية المتحدة - دبي - الخليج التجاري - برج المنارة - مكتب 3002</p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-phone"></span>
+				        		</div>
+				        		<div class="text pr-3">
+					            <p><span> الهاتف:</span> <a href="tel://+97143306663">6663 330 4 971+</a></p>
+					          </div>
+				          </div>
+						  <div class="dbox w-100 d-flex align-items-center">
+							<div class="icon d-flex align-items-center justify-content-center">
+								<span class="fa fa-phone"></span>
+							</div>
+							<div class="text pr-3">
+							<p><span> الهاتف:</span> <a href="tel://+971569708000">8000 970 56 971+</a></p>
+						  </div>
+					  </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-paper-plane"></span>
+				        		</div>
+				        		<div class="text pr-3">
+					            <p><span>البريد الإلكتروني:</span> <a href="mailto:info@yoursite.com">info@kiswame.com</a></p>
+					          </div>
+				          </div>
+				        	<div class="dbox w-100 d-flex align-items-center">
+				        		<div class="icon d-flex align-items-center justify-content-center">
+				        			<span class="fa fa-globe"></span>
+				        		</div>
+				        		<div class="text pr-3">
+					            <p><span>موقع الإلكتروني:</span> <a href="index.html">kiswauae.com</a></p>
+					          </div>
+				          </div>
+			          </div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section>
+
+	<script src="assets/vendor/jquery/jquery.min.js"></script>
+	<script src="assets/vendor/bootstrap/js/bootstrap.min.js"></script>
+	<script src="assets/js/create_task.js"></script>
+
+	</body>
+</html>
+
